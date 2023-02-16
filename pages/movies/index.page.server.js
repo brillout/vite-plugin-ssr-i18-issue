@@ -44,5 +44,7 @@ export const prerender = async () => {
         }
       }
   });
-  return (await Promise.all(promises)).flat();
+  const c = (await Promise.all(promises)).flat();
+  console.log(c);
+  return c
 };
